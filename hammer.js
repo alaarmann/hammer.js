@@ -2818,6 +2818,7 @@ function triggerDomEvent(event, data) {
 var Hammer = function Hammer(element, options) {
   classCallCheck(this, Hammer);
 
+  console.log('Hammer: in constructor');
   options = options || {};
   options.recognizers = ifUndefined(options.recognizers, Hammer.defaults.preset);
   return new Manager(element, options);
