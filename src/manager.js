@@ -261,6 +261,7 @@ export default class Manager {
    * @param {Object} data
    */
   emit(event, data) {
+    console.log('emit() called with', event, data)
     // we also want to trigger dom events
     if (this.options.domEvents) {
       triggerDomEvent(event, data);
