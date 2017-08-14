@@ -43,6 +43,7 @@ inherit(PointerEventInput, Input, {
      * @param {Object} ev
      */
     handler: function PEhandler(ev) {
+        console.log('PEhandler called', ev)
         var store = this.store;
         var removePointer = false;
 
